@@ -224,24 +224,47 @@ header {
 
 
 .car-wheel {
-    width: 5vw;
-    height: 5vw;
+    width: 6.3vw;
+    height: 6.3vw;
     border-radius: 100%;
     display: flex;
     position: absolute;
     z-index: 999;
-    transition: 0.1s ease all;
-    animation: wheel 1s linear infinite;
+    animation: wheel 0.3s linear infinite;
+    filter: blur(0.5px);
 }
 
-.car-wheel
+.car-wheel img {
+    width: 100%;
+}
 
 @keyframes wheel {
     to {
         transform: rotate(-360deg);
+        
     }
 }
 
+.car {
+    width: 5vw;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    margin-bottom: -15vh;
+    margin-right: 50vw;
+}
+
+#wheel1 {
+    margin-bottom: -17vh;
+    margin-right: 24.5vw;
+}
+
+#wheel2 {
+    margin-bottom: -17vh;
+    margin-right: -24.3vw;
+}
 
 .download-info {
     margin-top: 5vh;
