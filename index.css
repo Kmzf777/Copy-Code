@@ -196,36 +196,15 @@ header {
     justify-content: center;
     bottom: 0;
     z-index: 799;
-    background: var(--dark4);
 }
 
-.car-background::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 65vh;
-    background: var(--dark4);
-    filter: blur(15px);
-    z-index: 799;
-    bottom: 0;
-}
-
-.car-background::before {
-    content: '';
-    position: absolute;
-    width: 110%;
-    height: 95vh;
-    filter: blur(85px);
-    background: var(--dark4);
-    z-index: 699;
-}
 
 
 
 
 .car-wheel {
-    width: 6.3vw;
-    height: 6.3vw;
+    width: 6vw;
+    height: 6vw;
     border-radius: 100%;
     display: flex;
     position: absolute;
@@ -246,24 +225,26 @@ header {
 }
 
 .car {
-    width: 5vw;
+    width: 35vw;
     border-radius: 100%;
     display: flex;
     position: absolute;
     z-index: 999;
-    bottom: 0;
-    margin-bottom: -15vh;
-    margin-right: 50vw;
+    margin-right: 5vw;
+}
+
+.car img {
+    width: 100%;
 }
 
 #wheel1 {
-    margin-bottom: -17vh;
-    margin-right: 24.5vw;
+    margin-bottom: -8.7vw;
+    margin-right: 27vw;
 }
 
 #wheel2 {
-    margin-bottom: -17vh;
-    margin-right: -24.3vw;
+    margin-bottom: -8.4vw;
+    margin-right: -19.3vw;
 }
 
 .download-info {
@@ -271,11 +252,11 @@ header {
     color: var(--font1);
     width: 90vw;
     z-index: 899;
-    background: var(--dark4);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 200vw;
 }
 
 .download-info h2 {
