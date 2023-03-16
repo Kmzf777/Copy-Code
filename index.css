@@ -182,11 +182,6 @@ header {
     background: transparent;
     color: var(--yellow1);
     width: 40%;
-    box-shadow: 0 0 5px var(--yellow1),
-    0 0 10px var(--yellow1),
-    0 0 30px var(--yellow1),
-    0 0 60px var(--yellow1),
-    0 0 120px var(--yellow1);
     cursor: pointer;
     letter-spacing: 4px;
 }
@@ -229,7 +224,6 @@ header {
 
 
 .car-wheel {
-    background: linear-gradient(var(--yellow1),var(--font1));
     width: 5vw;
     height: 5vw;
     border-radius: 100%;
@@ -237,7 +231,15 @@ header {
     position: absolute;
     z-index: 999;
     transition: 0.1s ease all;
-    
+    animation: wheel 1s linear infinite;
+}
+
+.car-wheel
+
+@keyframes wheel {
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 
